@@ -4,13 +4,15 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 :root {
   font-size: 62.5%;
   --cor-padrao: #add8e6;
+  --background-padrao: #f4f1f1;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 1.6rem;
 }
 
 html,
@@ -19,11 +21,12 @@ body {
   height: 100%;
 }
 
-/* header */
-img {
-  width: 4.4rem;
-  height: 4.4rem;
+body {
+  background-color: var(--background-padrao);
+  font-size: 1.6rem;
 }
+
+/* header */
 
 header {
   display: flex;
@@ -33,6 +36,7 @@ header {
   padding-block: 2.6rem;
   justify-content: space-between;
   background-color: var(--cor-padrao);
+  width: 100%;
 }
 
 .input-group {
@@ -52,13 +56,38 @@ header {
 }
 
 .logo img {
-  width: 4rem;
-  height: 4rem;
+  width: 7rem;
+  height: 7rem;
 }
 
 button {
   background: none;
   border: none;
+}
+
+/* nav */
+
+nav {
+  margin-bottom: 5rem;
+}
+
+/* main */
+
+.cont {
+  padding-inline: 10rem;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-inline: 6.5rem;
+  padding-block: 2.6rem;
+  justify-content: space-between;
+  background-color: var(--cor-padrao);
+  width: 100%;
 }
 
 .carousel-caption {
