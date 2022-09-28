@@ -100,6 +100,14 @@ body.darkMode .switch .buttonD {
 }
 
 body.darkMode {
+  color: var(--background-padrao);
+}
+
+body.darkMode p {
+  color: var(--background-padrao);
+}
+
+body.darkMode {
   background-color: var(--background-dark);
 }
 
@@ -205,8 +213,8 @@ form {
 }
 
 body.darkMode form {
-background-color: var(--background-sec-dark);
-color: white;
+  background-color: var(--background-sec-dark);
+  color: white;
 }
 
 body.darkMode h1 {
