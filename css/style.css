@@ -8,6 +8,7 @@
   font-size: 62.5%;
   --cor-padrao: #add8e6;
   --background-padrao: #f4f1f1;
+  --margin-header: 5rem;
 }
 
 html {
@@ -24,6 +25,7 @@ body {
 body {
   background-color: var(--background-padrao);
   font-size: 1.6rem;
+  font-family: "Montserrat";
 }
 
 /* header */
@@ -49,12 +51,6 @@ header {
   height: 2rem;
 }
 
-.darkMode img,
-.lightMode img {
-  width: 3rem;
-  height: 3rem;
-}
-
 .logo img {
   width: 7rem;
   height: 7rem;
@@ -65,16 +61,60 @@ button {
   border: none;
 }
 
+/* switch */
+
+.buttonD img,
+.buttonL img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.buttonL {
+  visibility: hidden;
+  opacity: 0;
+}
+
+body.darkMode .switch .buttonL {
+  visibility: visible;
+  opacity: 1;
+}
+
+body.darkMode .switch .buttonD {
+  visibility: hidden;
+  opacity: 0;
+}
+
 /* nav */
 
 nav {
-  margin-bottom: 5rem;
+  margin-bottom: var(--margin-header);
 }
 
 /* main */
-
 .cont {
   padding-inline: 10rem;
+}
+
+.aside {
+  text-align: center;
+}
+
+.aside h3 {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+/* suporte */
+
+.suporte {
+  bottom: 1rem;
+  right: 4rem;
+}
+
+.suporte img {
+  width: 4rem;
+  height: 4rem;
 }
 
 /* footer */
