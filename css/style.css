@@ -133,3 +133,15 @@ footer {
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.7);
 }
+
+form {
+  display:flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  margin: auto;
+  background-color: white;
+  padding: 3rem;
+  box-shadow: 2px 2px 4px #000000;
+
+}
