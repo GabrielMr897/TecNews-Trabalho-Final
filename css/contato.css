@@ -6,3 +6,19 @@ h1 {
   .imgMain{
     margin-top: 6.5rem;
   }
+
+  .check{
+    display: flex;
+    align-items: center;
+  }
+  .check input{
+  margin-right: 1rem;
+  }
+
+  #msg{ 
+    padding: 1rem;
+    width: 52rem; 
+    height: 20rem; 
+    resize: none;
+  }
+ 

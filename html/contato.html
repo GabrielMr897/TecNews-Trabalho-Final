@@ -111,12 +111,19 @@
       <input type="date" name="nascimento" id="nascimento">
       <br />
       <br />
-      <label for="receberEmail">Receber E-mail? </label>
+      <label for="mensagem.">Mensagem: </label>
+      <textarea  id="msg" name="msg" maxlength="410" placeholder="Escreva aqui..."></textarea>
+      </div>
+      <br />
+      <br />
+      <div class="check">
       <input type="checkbox" name="receberEmail" id="receberEmail">
+      <label for="receberEmail">Receber E-mail. </label>
+    </div>
       <br />
       <br />
-      <input type="submit" value="ENVIAR">
-    </form>
+      <input type="button" class="enviar" name="envia" id="envia" value="ENVIAR" onclick="enviar()">
+      </form>
     
 
       
