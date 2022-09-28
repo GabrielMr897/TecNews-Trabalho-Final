@@ -1,6 +1,7 @@
 .noticias{
-    width: 60%;
+    width: 100%;
     margin: auto;
+    padding: 0%;
 }
 
 
@@ -15,4 +16,8 @@ h1{
 .cont{
     margin-top: 5rem;
     margin-bottom: 140px;
+}
+
+.container{
+    width: 90%;
 }
