@@ -61,3 +61,7 @@ body.darkMode .midia svg path:nth-of-type(1):hover{
 body.darkMode .midia svg path:nth-of-type(2){
   fill: none;
 }
+
+body.darkMode .filho{
+  background-color: var(--background-sec-dark);
+}
