@@ -18,6 +18,11 @@ html {
   font-size: 1.6rem;
 }
 
+a {
+  text-decoration: none;
+  color: var(--background-dark);
+}
+
 html,
 body {
   width: 100%;
@@ -25,6 +30,7 @@ body {
 }
 
 body {
+  color: var(--background-dark);
   background-color: var(--background-padrao);
   font-size: 1.6rem;
   font-family: "Montserrat";
@@ -46,7 +52,7 @@ header {
 .input-group {
   width: 35%;
   height: 4rem;
-  box-shadow: 2px 2px 4px #000000;
+  box-shadow: 2px 2px 4px var(--background-sec-dark);
 }
 
 .searchButton {
@@ -138,12 +144,16 @@ nav {
 
 .suporte {
   bottom: 1rem;
-  right: 4rem;
+  right: 1rem;
 }
 
 .suporte img {
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
+}
+
+.suporte img:hover {
+  opacity: 0.6;
 }
 
 /* footer */
@@ -163,8 +173,24 @@ footer p {
   font-size: 1.4rem;
 }
 
+/* carrossel */
+
 .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: var(--cor-padrao);
+  color: var(--background-dark);
+}
+
+.carousel-indicators button.buttonCarousel {
+  background-color: var(--background-dark);
+}
+
+body.darkMode .carousel-caption {
+  background-color: var(--background-dark);
+  color: var(--cor-padrao);
+}
+
+body.darkMode .carousel-indicators button.buttonCarousel {
+  background-color: var(--cor-padrao);
 }
 
 form {
@@ -175,5 +201,5 @@ form {
   margin: auto;
   background-color: white;
   padding: 3rem;
-  box-shadow: 2px 2px 4px #000000;
+  box-shadow: 2px 2px 4px var(--background-dark);
 }
