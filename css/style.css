@@ -135,6 +135,24 @@ body.darkMode .dropdown-menu a.dropdown-item:hover {
   color: #0a0909;
 }
 
+body.darkMode form {
+  background-color: var(--background-sec-dark);
+  color: white;
+}
+
+body.darkMode h1 {
+  color: var(--background-padrao);
+}
+
+body.darkMode .carousel-caption {
+  background-color: var(--background-dark);
+  color: var(--cor-padrao);
+}
+
+body.darkMode .carousel-indicators button.buttonCarousel {
+  background-color: var(--cor-padrao);
+}
+
 /* nav */
 
 nav {
@@ -186,8 +204,15 @@ footer {
   width: 100%;
 }
 
-footer p {
+footer .linkFooter p,
+footer .logoFooter p {
   font-size: 1.4rem;
+  color: var(--background-dark);
+}
+
+footer .linkFooter a:hover p {
+  font-size: 1.4rem;
+  opacity: 0.5;
 }
 
 /* carrossel */
@@ -201,15 +226,6 @@ footer p {
   background-color: var(--background-dark);
 }
 
-body.darkMode .carousel-caption {
-  background-color: var(--background-dark);
-  color: var(--cor-padrao);
-}
-
-body.darkMode .carousel-indicators button.buttonCarousel {
-  background-color: var(--cor-padrao);
-}
-
 form {
   display: flex;
   flex-direction: column;
@@ -219,13 +235,4 @@ form {
   background-color: white;
   padding: 3rem;
   box-shadow: 2px 2px 4px var(--background-dark);
-}
-
-body.darkMode form {
-  background-color: var(--background-sec-dark);
-  color: white;
-}
-
-body.darkMode h1 {
-  color: var(--background-padrao);
 }
