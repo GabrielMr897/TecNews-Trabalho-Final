@@ -9,6 +9,8 @@
   --cor-padrao: #add8e6;
   --background-padrao: #f4f1f1;
   --margin-header: 5rem;
+  --background-dark: #161515;
+  --background-sec-dark: #292828;
 }
 
 html {
@@ -44,9 +46,16 @@ header {
 .input-group {
   width: 35%;
   height: 3rem;
+  box-shadow: 2px 2px 4px #000000;
 }
 
 .searchButton {
+  border: none;
+  background-color: var(--background-padrao);
+  border-radius: 15%;
+}
+
+.searchButton img {
   width: 2rem;
   height: 2rem;
 }
@@ -84,9 +93,29 @@ body.darkMode .switch .buttonD {
   opacity: 0;
 }
 
+body.darkMode {
+  background-color: var(--background-dark);
+}
+
+body.darkMode nav.navbar,
+body.darkMode .dropdown-menu {
+  background-color: var(--background-sec-dark);
+}
+
+body.darkMode nav.navbar #navbarNavDropdown ul li a.nav-link,
+body.darkMode .dropdown-menu a.dropdown-item {
+  color: white;
+}
+
+body.darkMode nav.navbar #navbarNavDropdown ul li a.nav-link:hover,
+body.darkMode .dropdown-menu a.dropdown-item:hover {
+  color: #0a0909;
+}
+
 /* nav */
 
 nav {
+  background-color: white;
   margin-bottom: var(--margin-header);
 }
 
@@ -128,6 +157,10 @@ footer {
   justify-content: space-between;
   background-color: var(--cor-padrao);
   width: 100%;
+}
+
+footer p {
+  font-size: 1.4rem;
 }
 
 .carousel-caption {
