@@ -98,9 +98,9 @@
       <!-- Formulário em HTML -->
 
     
-    <form action="cadastro.php" method="POST">
+    <form method="POST" id="form">
       <label for="nome">Nome: </label>
-      <input type="text" name="nome" id="nome" placeholder="Insira seu nome completo" />
+      <input type="text" name="nome" id="nome" placeholder="Insira seu nome completo"/>
       <br />
       <br />
       <label for="email1">Email: </label>
@@ -111,9 +111,8 @@
       <input type="date" name="nascimento" id="nascimento">
       <br />
       <br />
-      <label for="mensagem.">Mensagem: </label>
-      <textarea  id="msg" name="msg" maxlength="410" placeholder="Escreva aqui..."></textarea>
-      </div>
+      <label for="msg">Mensagem: </label>
+      <textarea  id="msg" name="msg" maxlength="410" placeholder="Escreva aqui..." ></textarea> 
       <br />
       <br />
       <div class="check">
@@ -122,7 +121,7 @@
     </div>
       <br />
       <br />
-      <input type="button" class="enviar" name="envia" id="envia" value="ENVIAR" onclick="enviar()">
+      <input type="button" class="enviar" name="envia" id="envia" value="ENVIAR">
       </form>
     
 
