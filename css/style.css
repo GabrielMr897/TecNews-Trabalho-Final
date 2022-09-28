@@ -45,7 +45,7 @@ header {
 
 .input-group {
   width: 35%;
-  height: 3rem;
+  height: 4rem;
   box-shadow: 2px 2px 4px #000000;
 }
 
@@ -61,8 +61,8 @@ header {
 }
 
 .logo img {
-  width: 7rem;
-  height: 7rem;
+  width: 10rem;
+  height: 10rem;
 }
 
 button {
@@ -168,7 +168,7 @@ footer p {
 }
 
 form {
-  display:flex;
+  display: flex;
   flex-direction: column;
   width: 50%;
   justify-content: center;
@@ -176,5 +176,4 @@ form {
   background-color: white;
   padding: 3rem;
   box-shadow: 2px 2px 4px #000000;
-
 }
