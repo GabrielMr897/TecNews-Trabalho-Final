@@ -177,3 +177,12 @@ form {
   padding: 3rem;
   box-shadow: 2px 2px 4px #000000;
 }
+
+body.darkMode form {
+background-color: var(--background-sec-dark);
+color: white;
+}
+
+body.darkMode h1 {
+  color: var(--background-padrao);
+}

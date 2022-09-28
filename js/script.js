@@ -5,3 +5,6 @@ function darkMode() {
 function lightMode() {
   document.body.classList.remove("darkMode");
 }
+function enviar(){
+window.location.href = "contato.html"
+}
