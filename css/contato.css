@@ -44,3 +44,14 @@ form {
   margin-right: 2rem;
   font-size: 1.5rem;
 }
+
+form .enviar:hover {
+  background-color: var(--background-dark);
+  border-color: var(--cor-padrao);
+}
+
+body.darkMode form input,
+body.darkMode form textarea {
+  background-color: var(--background-sec-dark);
+  color: var(--background-padrao);
+}
