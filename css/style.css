@@ -288,13 +288,13 @@ form {
     flex-direction: column;
     gap: 16rem;
   }
-  .formcont{
+  .formcont {
     width: 70%;
   }
-  .imgMain{
+  .imgMain {
     width: 60%;
   }
-  .suporte{
+  .suporte {
     font-size: 4.5rem;
   }
   h1 {
