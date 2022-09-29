@@ -7,9 +7,7 @@
   --background-sec-dark: #292828;
 }
 
-.imgMain {
-  margin-top: 22rem;
-}
+
 
 .check {
   display: flex;
@@ -17,6 +15,10 @@
 }
 .check input {
   margin-right: 1rem;
+}
+.imgMain{
+  width: 25%;
+  height: 25%;
 }
 
 #msg {
@@ -26,26 +28,38 @@
 }
 
 h2 {
-  margin-top: 17rem;
   margin-bottom: 2rem;
 }
 
-form {
-  margin-bottom: 10rem;
-}
 
 .endereco {
   display: flex;
   flex-direction: row-reverse;
   text-align: center;
+  flex-wrap: wrap;
+  margin-bottom: 14rem;
 }
-
+.maincont{
+  margin-top: 22rem;
+  margin-bottom: 10rem;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20rem;
+}
+.formcont{
+  width: 50%;
+}
+.formcont form{
+  width: 100%;
+}
 .endereco .textoEndereco p {
   margin-right: 2rem;
   font-size: 1.5rem;
 }
 
-form .enviar:hover {
+body.darkmode form .enviar:hover {
   background-color: var(--background-dark);
   border-color: var(--cor-padrao);
 }
