@@ -174,7 +174,7 @@ nav {
 /* main */
 .cont {
   margin-top: 5rem;
-  margin-bottom: 140px;
+  margin-bottom: 14rem;
 
   padding-inline: 10rem;
 }
@@ -186,6 +186,7 @@ nav {
 }
 
 .aside {
+  display: flex;
   text-align: center;
 }
 
@@ -301,5 +302,9 @@ form {
 
   footer .logoFooter p {
     width: 30rem;
+  }
+
+  .aside {
+    flex: wrap;
   }
 }
