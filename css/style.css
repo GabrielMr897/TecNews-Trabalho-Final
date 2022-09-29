@@ -210,6 +210,13 @@ body.darkMode .suporte {
   opacity: 0.6;
 }
 
+/* aside */
+
+aside {
+  display: flex;
+  justify-content: center;
+}
+
 /* footer */
 
 footer {
@@ -270,4 +277,23 @@ form {
   background-color: white;
   padding: 3rem;
   box-shadow: 2px 2px 4px var(--background-dark);
+}
+
+@media (max-width: 800px) {
+  .cont {
+    padding: 1rem;
+  }
+
+  .logo img {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  h1 {
+    margin-top: 2rem;
+  }
+
+  footer .logoFooter p {
+    width: 30rem;
+  }
 }
