@@ -57,6 +57,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // getData();
       localStorage.setItem(contato.email, JSON.stringify(contato));
+      document.getElementById("nome").value = ""; //Carregamos o valor do campo nome
+      document.getElementById("email1").value = ""; //Carregamos o valor do campo e-mail
+      document.getElementById("nascimento").value = ""; //Carregamos o valor do campo nascimento
+      document.getElementById("msg").value = "";
     }
   });
 });
