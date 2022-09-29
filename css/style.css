@@ -93,6 +93,17 @@ button {
   height: 4rem;
 }
 
+.switch {
+  position: relative;
+  height: 100%;
+}
+
+.buttonL {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .buttonL {
   visibility: hidden;
   opacity: 0;
@@ -181,16 +192,21 @@ nav {
 /* suporte */
 
 .suporte {
-  bottom: 1rem;
+  bottom: 0.1rem;
   right: 1rem;
 }
 
-.suporte img {
-  width: 5rem;
-  height: 5rem;
+.suporte {
+  font-size: 7rem;
+  color: var(--background-dark);
 }
 
-.suporte img:hover {
+body.darkMode .suporte {
+  color: var(--background-padrao);
+}
+
+.suporte:hover {
+  color: var(--background-dark);
   opacity: 0.6;
 }
 
