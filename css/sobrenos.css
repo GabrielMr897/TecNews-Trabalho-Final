@@ -13,6 +13,7 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  gap: 2rem;
 }
 
 .filho {
@@ -21,6 +22,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 2px 2px var(--background-sec-dark);
 }
 
 h1 {
@@ -57,7 +59,11 @@ body.darkMode .midia svg path:nth-of-type(2) {
   fill: none;
 }
 
-body.darkMode .filho{
+body.darkMode .filho {
   background-color: var(--background-sec-dark);
 }
 
+.about {
+  display: flex;
+  gap: 1.5rem;
+}
