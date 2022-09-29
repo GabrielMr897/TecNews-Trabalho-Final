@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let mensagem = document.getElementById("msg").value;
     let validacoes = 0;
 
-    if (nome.length > 10) {
+    if (nome.length > 5) {
       validacoes++;
     }
 

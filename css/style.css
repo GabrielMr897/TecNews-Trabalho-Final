@@ -179,6 +179,12 @@ nav {
   padding-inline: 10rem;
 }
 
+.mainNot {
+  display: flex;
+  flex-direction: column;
+  gap: 9rem;
+}
+
 .aside {
   text-align: center;
 }
@@ -215,6 +221,8 @@ body.darkMode .suporte {
 aside {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  gap: 10rem;
 }
 
 /* footer */
@@ -242,22 +250,6 @@ footer .linkFooter a:hover p {
 }
 
 /* carrossel */
-
-#carouselExampleCaptions .carousel-item {
-  height: 85%;
-}
-
-#carouselExampleCaptions .carousel-item img {
-  height: 100%;
-}
-
-#carouselExampleCaptions .carousel-indicators {
-  height: 19%;
-}
-
-#carouselExampleCaptions .carousel-caption {
-  height: 10%;
-}
 
 .carousel-caption {
   background-color: var(--cor-padrao);
