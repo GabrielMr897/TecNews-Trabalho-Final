@@ -284,7 +284,19 @@ form {
     padding: 2rem;
     margin-top: 0;
   }
-
+  .maincont {
+    flex-direction: column;
+    gap: 16rem;
+  }
+  .formcont{
+    width: 70%;
+  }
+  .imgMain{
+    width: 60%;
+  }
+  .suporte{
+    font-size: 4.5rem;
+  }
   h1 {
     font-size: 2.5rem;
   }
