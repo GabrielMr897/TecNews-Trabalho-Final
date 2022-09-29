@@ -185,9 +185,13 @@ nav {
   gap: 9rem;
 }
 
-.aside {
+.imgaside {
   display: flex;
   text-align: center;
+}
+
+.aside h2 {
+  margin-bottom: 3rem;
 }
 
 .aside h3 {
@@ -224,6 +228,9 @@ aside {
   justify-content: center;
   flex-direction: column;
   gap: 10rem;
+}
+aside h2 {
+  margin-bottom: 3rem;
 }
 
 /* footer */
