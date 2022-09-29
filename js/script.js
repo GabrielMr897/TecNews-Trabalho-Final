@@ -6,14 +6,23 @@ function lightMode() {
   document.body.classList.remove("darkMode");
 }
 
-const contatos = [];
+let contatos = [];
 
+const getData = async () => {
+  const response = await fetch(contatos);
+  const data = await response.json();
+
+  const tarefa = data.filter((tarefa) => tarefa.checkbox === true);
+
+  console.log(tarefa);
+};
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("envia").addEventListener("click", function (sub) {
     let nome = document.getElementById("nome").value; //Carregamos o valor do campo nome
     let email = document.getElementById("email1").value; //Carregamos o valor do campo e-mail
-    let nascimento = document.getElementById("nascimento").value; //Carregamos o valor do campo senha
+    let nascimento = document.getElementById("nascimento").value; //Carregamos o valor do campo nascimento
     let mensagem = document.getElementById("msg").value;
+    let checkbox = document.getElementById("receberEmail").checked;
     let validacoes = 0;
 
     if (nome.length > 5) {
@@ -36,22 +45,18 @@ document.addEventListener("DOMContentLoaded", function () {
       sub.preventDefault();
       alert("Preencha corretamente todos os campos");
     } else {
-      localStorage.nome = nome;
-      localStorage.email = email;
-      localStorage.nascimento = nascimento;
-      localStorage.mensagem = mensagem;
+      let contato = {
+        nome: nome,
+        email: email,
+        nascimento: nascimento,
+        mensagem: mensagem,
+        checkbox: checkbox,
+      };
 
-      console.log(
-        localStorage.nome,
-        localStorage.email,
-        localStorage.nascimento,
-        localStorage.mensagem
-      );
+      contatos.push(contato);
 
-      document.getElementById("nome").value = "";
-      document.getElementById("email1").value = "";
-      document.getElementById("nascimento").value = "";
-      document.getElementById("msg").value = "";
+      // getData();
+      localStorage.setItem(contato.email, JSON.stringify(contato));
     }
   });
 });
