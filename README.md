@@ -5,16 +5,16 @@
 Site de notícias sobre tecnologia
 
 
-## Technology 
+## Tecnologias
 
-Here are the technologies used in this project.
+Tecnologias usadas no projeto:
 
 * HTML
 * CSS
 * Javascript
 * Bootstrap
 
-## Services Used
+## Serviços usados
 
 * Github
 
@@ -22,7 +22,7 @@ Here are the technologies used in this project.
 ## Getting started
 
 * Dependency
-  - Algum Estúdio instalado  
+  - Só clicar em nosso link no git pages  
 
 ## How to use
 
@@ -30,25 +30,20 @@ Here are the technologies used in this project.
 
 ![Homepage image](https://github.com/GabrielMr897/TecNews-Trabalho-Final/blob/main/assets/home.png)
 
-### 2 - You can also see a lot of information on the Blog posts session.
+### 2 - Se clicar em um dos slides, entrará nos detalhes sobre a notícia.
 
-![Posts]()
+![Posts](https://github.com/GabrielMr897/TecNews-Trabalho-Final/blob/main/assets/noticiadrone.png)
 
-### 3 - Or access some of the posts :D
+### 3 - Se clicar em um dos links do footer ou no ícone de fone, nossas páginas irão abrir sobre :D
 
-![Post show]()
-![Post show]()
-![Post show]()
-
-### 4 - Or you can see my personal Portfolio.
-
-![Portfolio]()
-![Portfolio]()
+![Post show](https://github.com/GabrielMr897/TecNews-Trabalho-Final/blob/main/assets/mulherFaleconosco.png)
+![Post show](https://github.com/GabrielMr897/TecNews-Trabalho-Final/blob/main/assets/politicadePrivacidade.png)
+![Post show](https://github.com/GabrielMr897/TecNews-Trabalho-Final/blob/main/assets/git.png)
 
 
-## Features
+## características
 
-The main features of the application are:
+As principais características do aplicativo são: 
  - Responsividade
  - Switch Teme
  - Formulário receber dados 
